@@ -1,0 +1,49 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--columns-row),1fr);
+    grid-template-rows: repeat(var(--columns-row), 1fr);
+    width: 500px;
+    height: 500px;
+    border: 45px solid red;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+}
+:root {
+    --columns-row: 2;
+}
+.box {
+    color: white;
+}
+.text {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+.settings {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+button {
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(230, 226, 223);
+    padding: 5px;
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 100px;
+}
+button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+button:active {
+    transform: translateY(4px);
+    background-color: whitesmoke;
+}
