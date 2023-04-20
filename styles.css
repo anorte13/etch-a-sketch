@@ -1,49 +1,73 @@
 #container {
-    display: grid;
-    grid-template-columns: repeat(var(--columns-row),1fr);
-    grid-template-rows: repeat(var(--columns-row), 1fr);
-    width: 500px;
-    height: 500px;
-    border: 45px solid red;
-    border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: ghostwhite;
+  display: grid;
+  grid-template-columns: repeat(var(--columns-row), 1fr);
+  grid-template-rows: repeat(var(--columns-row), 1fr);
+  width: 600px;
+  height: 600px;
+  border: 30px solid red;
+  border-radius: 40px;
+  background-color: ghostwhite;
 }
 :root {
-    --columns-row: 2;
+  --columns-row: 2;
 }
 .box {
-    color: white;
+  color: white;
 }
-.text {
-    text-align: center;
-    font-size: 50px;
-    color: red;
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .settings {
-    display: flex;
-    flex-direction: row;
-    gap: 52px;
-    justify-content: center;
-    margin-bottom: 10px;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+.wrapper {
+  display: block;
+}
+.main {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button {
-    border-radius: 10px;
-    border: 2px solid black;
-    cursor: pointer;
-    text-align: center;
-    background-color: rgb(230, 226, 223);
-    padding: 5px;
-    font-size: 15px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 100px;
+  border-radius: 8px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(230, 226, 223);
+  padding: 5px;
+  font-size: 25px;
+  width: 190px;
+  height: 55px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button:hover {
-    background-color: whitesmoke;
-    color: black;
+  background-color: whitesmoke;
+  color: black;
 }
 button:active {
-    transform: translateY(4px);
-    background-color: whitesmoke;
+  transform: translateY(4px);
+  background-color: whitesmoke;
 }

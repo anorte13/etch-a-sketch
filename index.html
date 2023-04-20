@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <title id="header">Etch-A-Sketch</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="etch-a-sketch-logic.js"></script>
   </head>
 
   <body>
-    <h1 class="text">Etch-A-Sketch!</h1>
-
-    <div class="settings">
-      <button id="user">Start</button>
-      <button id="delete">Reset</button>
-      <button id="rainbow">Rainbow</button>
-      <button id="eraser">Eraser</button>
-      <button id="default">Default</button>
+    <div class="wrapper">
+      <div class="title">
+        <h1 class="title">Etch-A-Sketch!</h1>
+      </div>
+      <div class="main">
+        <div class="settings">
+          <button id="user">Start</button>
+          <button id="delete">Reset</button>
+          <button id="rainbow">Rainbow</button>
+          <button id="eraser">Eraser</button>
+          <button id="default">Default</button>
+        </div>
+        <div id="container"></div>
+      </div>
+      <div class="footer">
+        <footer>
+          Developed by <a href="https://github.com/anorte13">anorte13</a>
+        </footer>
+      </div>
     </div>
-    <div id="container"></div>
-    <script src="etch-a-sketch-logic.js"></script>
   </body>
 </html>
