@@ -3,6 +3,8 @@ const $ = (id) => {
   return document.getElementById(id);
 };
 
+let container = $("container");
+
 let startBtn = $("user");
 startBtn.addEventListener("click", createGrid);
 
@@ -19,8 +21,6 @@ let ereaseBtn = $("eraser");
 ereaseBtn.addEventListener("click", eraserBox);
 
 function createGrid() {
-  let container = document.getElementById("container");
-
   let rows = prompt("How many rows do you want?: ");
   if (rows > 100) {
     alert("Please pick a number less than 100");
@@ -39,6 +39,7 @@ function createGrid() {
       this.style.backgroundColor = "black";
     });
   }
+  startBtn.disabled = true;
 }
 
 function clearGrid() {
@@ -46,6 +47,10 @@ function clearGrid() {
   element.forEach((box) => {
     box.style.backgroundColor = "ghostwhite";
   });
+  while (container.firstChild) {
+    container.removeChild(container.firstElementChild);
+  }
+  startBtn.disabled = false;
 }
 
 function rainbowMode() {
